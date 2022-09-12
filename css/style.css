@@ -13,16 +13,25 @@ body{
         "main "
         "footer ";
         grid-template-rows: 100px 1fr 100px;
+        font-family: 'Montserrat', sans-serif;
 }
 
 header{
     grid-area: header;
-    background-color: coral;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 100px;
+    color: #fff;
 }
 
 main{
     grid-area: main;
-    background-color: blue;
+    display: grid;
+    grid-template-areas: 
+    "description product social";
+    grid-template-columns: 380px 1fr 48px;
+    padding: 0 100px;
 }
 
 footer{
