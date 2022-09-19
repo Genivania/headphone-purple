@@ -1,4 +1,7 @@
 .social{
     grid-area: social;
-    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
 }
